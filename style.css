@@ -1,0 +1,152 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: flex;
+    height: 748px;
+    width: 100%;
+    background-color: rgb(75, 88, 88);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    border-radius: 15px;
+    width: 490px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-items: center;
+}
+
+.product {
+    margin-top: 10%;
+    margin-left: 26%;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.product-img {
+    height: 100%;
+    width: 250px;
+    border-end-start-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h1 {
+    margin-left: 9%;
+    margin-top: 10%;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    line-height: 1em;
+    font-size: xx-large;
+}
+
+.product-info {
+    margin-left: 8%;
+    margin-top: 10%;
+    line-height: 16px;
+}
+
+.product-discounted-price {
+    margin-top: 7%;
+    margin-left: 20%;
+    font-weight: 600;
+    color: darkgreen;
+}
+
+.product-mrp {
+    margin-top: 4%;
+    margin-left: 35%;
+    text-decoration: line-through;
+}
+
+.order {
+    margin-left: 13%;
+    margin-top: 15%;
+}
+
+button {
+    background-color: #4CAF50;
+    border: 5px solid #22a338;
+    border-radius: 5px;
+    color: #fefdfd;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #b48402;
+    border: 5px solid #cda43d;
+    color: white;
+}
+
+@media only screen and (max-width: 545px) and (min-width:120px) {
+
+    .container {
+        overflow: hidden;
+    }
+
+    .card {
+        width: 300px;
+        height: 701px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .product-img {
+        height: 300px;
+        width: 300px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-end-start-radius: 0px;
+        overflow: hidden;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-info {
+        margin-left: 4%;
+    }
+    h1 {
+        margin-left: 6%;
+    }
+
+    .order {
+        margin-left: 3%;
+        margin-top: 4%;
+    }
+button{
+    font-size: 11px;
+    margin: 2px 1px;
+    padding: 8px 16px;
+}
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
